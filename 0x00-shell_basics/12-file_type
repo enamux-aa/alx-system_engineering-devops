@@ -1,9 +1,2 @@
 #!/bin/bash
-file_path="/tmp/iamafile"
-
-if [ -f "$file_path" ]; then
-    file_type=$(file -b "$file_path")
-    echo "$file_path: $file_type"
-else
-    echo "Error: File not found or not a regular file."
-fi
+file /tmp/iamafile
